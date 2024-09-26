@@ -18,7 +18,7 @@ main > aside > div {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border-bottom: 1px solid #E5E5E5;
+  border-bottom: 1px solid #e5e5e5;
   padding: 10px;
 }
 
@@ -39,11 +39,11 @@ main > aside > div > button > a {
   display: flex;
   align-items: center;
   gap: 20px;
-  text-decoration: none
+  text-decoration: none;
 }
 
 main > aside > div > button:hover {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   cursor: pointer;
 }
 
