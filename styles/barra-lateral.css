@@ -1,0 +1,84 @@
+aside {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  height: 92.5vh;
+  overflow-y: auto;
+  overflow-x: auto;
+  position: sticky;
+  top: 56.25px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+main > aside > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid #E5E5E5;
+  padding: 10px;
+}
+
+main > aside > div > button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 10px;
+  gap: 20px;
+  padding: 5px;
+  padding-left: 20px;
+}
+
+main > aside > div > button > a {
+  color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none
+}
+
+main > aside > div > button:hover {
+  background-color: #E5E5E5;
+  cursor: pointer;
+}
+
+.img-suscripciones {
+  border-radius: 100%;
+}
+
+.tuResponsive {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  aside {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1340px) {
+  .barraLateral {
+    display: none;
+    padding: 0;
+  }
+  .barraResponsive > button {
+    flex-direction: column;
+    font-size: 10px;
+    gap: 5px;
+    padding-left: 0;
+  }
+  .tuResponsive {
+    display: flex;
+  }
+  aside {
+    width: 90px;
+  }
+  main > aside > div {
+    border: none;
+  }
+}

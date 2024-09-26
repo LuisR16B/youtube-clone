@@ -1,0 +1,92 @@
+nav {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 2020;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.divBuscar{
+  display: flex;
+  justify-content: center;
+}
+
+.divBuscar > div{
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.192);
+}
+
+.divNotificaciones {
+  display: flex;
+  justify-content: end;
+}
+
+.btnNotificaciones {
+  display: none;
+}
+
+nav > div > button, nav > div > div > button{
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  border-radius: 100%;
+  font-size: 20px;
+}
+
+input {
+  width: 100%;
+  border-radius: 20px 0px 0px 20px;
+  border: 2px solid #F0F0F0;
+  padding: 10px 20px;
+}
+
+.btn-nav-buscar {
+  padding: 9px 20px;
+  background-color: #F0F0F0  ;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.btn-nav-micro {
+  background-color: #F0F0F0;
+}
+
+.divNotificaciones > img {
+  border-radius: 100%;
+}
+
+.btn-nav-hover:hover {
+  background-color: #E5E5E5;
+  cursor: pointer;
+}
+
+.divNotificaciones > img:hover {
+  cursor: pointer;
+}
+@media only screen and (max-width: 430px) {
+  .btn-ocultar-430 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+  grid-template-columns: 1fr 1fr;
+  }
+  .divBuscar {
+    display: none;
+  }
+  .btnNotificaciones {
+    display: flex;
+  }
+}

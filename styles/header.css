@@ -1,0 +1,147 @@
+header {
+  margin: 0 20px;
+  margin-bottom: 20px;
+}
+
+header span {
+    font-weight: 500;
+    font-size: 15px;
+    color: #999898;
+}
+
+header a {
+  font-weight: 400;
+  color: #999898;
+  text-decoration: none
+}
+
+header a:visited {
+  color: #999898;
+
+}
+
+header a:link {
+  color: #999898;
+
+}
+
+header a:hover {
+  color: #5b5b5b;
+}
+
+.btnRecomendados {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: 40px;
+  padding: 10px 0;
+  overflow-y: auto;
+  position: sticky;
+  top: 56.25px;
+  z-index: 2020;
+}
+
+.btnRecomendados > button {
+  background-color: #F0F0F0;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.btnRecomendados > button:hover {
+  background-color: #E5E5E5;
+  cursor: pointer;
+}
+
+#videosRecomendados {
+  margin-top: 20px;
+  gap: 10px 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.borderRadius {
+  border-radius: 10px;
+}
+
+.miniaturavideo {
+  position: relative;
+}
+
+.miniaturavideo > span {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.412);
+  border-radius: 3px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.informacionVideo {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.tituloShorts {
+  display: flex;
+  margin: 20px 0;
+}
+
+#shortsRecomendados {
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#shortsRecomendados > div, .videosRecomendados > div {
+  width: 100%;
+}
+
+#videosRecomendados > div:hover, #shortsRecomendados > div:hover, #videosRecomendados button{
+  cursor: pointer;
+} 
+
+h3 {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 420px) {
+  #shortsRecomendados {
+    grid-template-columns:  1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #videosRecomendados {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  #shortsRecomendados {
+    grid-template-columns:  1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  #videosRecomendados {
+    grid-template-columns:  1fr 1fr 1fr;
+  }
+  #shortsRecomendados {
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #shortsRecomendados {
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+  }
+}
