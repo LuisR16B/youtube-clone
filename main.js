@@ -3,15 +3,15 @@ const shortsRecomendados = document.getElementById('shortsRecomendados');
 
 class tarjetaVideos{
   constructor(linkvideo, portadaVideo, imgperfilcanal, tituloVideo, urlCanal, nombreCanal, vistasVideo, tiempoPublicadoVideo, duracionVideo){
-      this.linkvideo = linkvideo;
-      this.portadaVideo = portadaVideo;
-      this.imgperfilcanal = imgperfilcanal;
-      this.tituloVideo = tituloVideo;
-      this.urlCanal = urlCanal;
-      this.nombreCanal = nombreCanal;
-      this.vistasVideo = vistasVideo;
-      this.tiempoPublicadoVideo = tiempoPublicadoVideo;
-      this.duracionVideo = duracionVideo;
+    this.linkvideo = linkvideo;
+    this.portadaVideo = portadaVideo;
+    this.imgperfilcanal = imgperfilcanal;
+    this.tituloVideo = tituloVideo;
+    this.urlCanal = urlCanal;
+    this.nombreCanal = nombreCanal;
+    this.vistasVideo = vistasVideo;
+    this.tiempoPublicadoVideo = tiempoPublicadoVideo;
+    this.duracionVideo = duracionVideo;
   }
 }
 
@@ -27,10 +27,10 @@ let tarjetasVerVideos = [
 
 class tarjetaShorts{
   constructor(linkvideo, portadaVideo, tituloVideo, vistasVideo){
-      this.linkvideo = linkvideo;
-      this.portadaVideo = portadaVideo;
-      this.tituloVideo = tituloVideo;
-      this.vistasVideo = vistasVideo;
+    this.linkvideo = linkvideo;
+    this.portadaVideo = portadaVideo;
+    this.tituloVideo = tituloVideo;
+    this.vistasVideo = vistasVideo;
   }
 }
 
