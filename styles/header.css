@@ -22,7 +22,6 @@ header a:visited {
 
 header a:link {
   color: #999898;
-
 }
 
 header a:hover {
@@ -102,7 +101,7 @@ header a:hover {
 
 #videosRecomendados > div:hover, #shortsRecomendados > div:hover, #videosRecomendados button{
   cursor: pointer;
-} 
+}
 
 h3 {
   width: 100%;
